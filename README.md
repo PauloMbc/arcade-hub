@@ -1,26 +1,34 @@
 # ARCADE/HUB
 
-Biblioteca pessoal de jogos web com visual de console, pensada para TV, computador e dispositivos móveis.
+Biblioteca pessoal de jogos web com experiência visual inspirada em interfaces de console, projetada para tela grande, computador e dispositivos móveis.
+
+## Experiência visual
+- Interface imersiva de tela cheia, com papel de parede cinematográfico e camadas de contraste.
+- Navegação superior e barra de categorias com estado selecionado destacado.
+- Carrossel horizontal de jogos com item em foco ampliado, transições suaves e arte/capa personalizada.
+- Atalhos de jogar, detalhes e opções, além de biblioteca organizada em grade.
+- Layout responsivo para diferentes dimensões de tela e suporte a preferência por movimento reduzido.
 
 ## Recursos
-- Cadastro manual de jogos por URL, com nome, tipo de acesso, capa e descrição.
-- Biblioteca com pesquisa e filtro.
-- Modo de jogo com iframe para sites que permitem incorporação e botão para abrir o endereço original em nova aba.
-- Navegação do Hub por controle compatível com a Gamepad API, além de teclado e mouse.
-- Solicitação de tela cheia.
-- Exportação e importação de backup JSON.
-- Persistência local via `localStorage`.
+- Cadastro, edição e remoção de jogos por URL, com categoria, modo de abertura, capa e descrição.
+- Biblioteca com pesquisa e filtros por categoria e tipo de acesso.
+- Tela de detalhes para cada jogo.
+- Modo de jogo com iframe para sites que permitem incorporação; opção de abrir o endereço original quando a incorporação é bloqueada.
+- Navegação por controle via Gamepad API, além de teclado e mouse.
+- Tela cheia e backup por exportação/importação JSON.
+- Persistência local via `localStorage`; não há conta nem sincronização na nuvem.
 
 ## Executar
-Abra `index.html` em um navegador moderno. Para melhor compatibilidade, sirva os arquivos por um servidor HTTP estático.
+Abra `index.html` em um navegador moderno. Para melhor compatibilidade, sirva o projeto por um servidor HTTP estático.
 
 ## Publicar
 O projeto é estático e não precisa de etapa de build. Importe o repositório no Vercel ou Cloudflare Pages, usando a raiz do projeto como diretório e sem comando de build.
 
 ## Importante
-- O jogo inicial de exemplo é **Avengers Takedown**: https://www.gameflare.com/online-game/avengers-takedown/
-- Alguns sites bloqueiam iframes por políticas de segurança; nesse caso, use **Abrir original**.
-- A navegação por controle no Hub não garante que o jogo em si aceite controle. Isso depende do jogo, do navegador e do dispositivo.
-- A biblioteca é local neste navegador. Use o backup JSON para transferir os dados; ainda não há contas nem sincronização na nuvem.
-- O Hub organiza links, não baixa nem hospeda jogos de terceiros. Use jogos e capas que você tenha permissão para acessar.
-- A experiência em Fire TV/Smart TV depende do navegador instalado, suporte a Gamepad API e permissões do dispositivo.
+- O jogo de exemplo é **Avengers Takedown**: https://www.gameflare.com/online-game/avengers-takedown/
+- Portais podem impedir a incorporação por políticas de segurança. O Hub oferece abertura no site original; não consegue remover as restrições impostas por outro site.
+- O controle navega pela interface do Hub, mas o suporte dentro do jogo depende do próprio jogo, navegador, sistema e dispositivo.
+- A biblioteca fica salva neste navegador. Use o backup JSON para transferir sua coleção para outro dispositivo.
+- O Hub organiza links; não baixa nem hospeda jogos de terceiros. Use jogos e capas aos quais você tenha acesso autorizado.
+- A experiência em Fire TV/Smart TV depende do navegador instalado, da Gamepad API e das permissões do dispositivo.
+- O visual foi atualizado no repositório; a publicação na hospedagem e os testes físicos em TV ainda precisam ser feitos.
