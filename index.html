@@ -157,7 +157,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,[tabindex]:focus-v
     <div class="settings" id="settingsPanel" style="display:none;margin-top:34px"><div class="view-top"><div><h2>Configurações</h2><div class="sub">Preferências e backup da sua biblioteca.</div></div></div>
       <div class="setting"><div><b>Navegação por controle</b><p>Direcional, analógico, A para selecionar, B para voltar.</p></div><span class="collection-count">ATIVA</span></div>
       <div class="setting"><div><b>Tela cheia</b><p>Ative a experiência imersiva no navegador.</p></div><button id="fullscreenBtn">Ativar tela cheia</button></div>
-      <div class="setting"><div><b>Backup da coleção</b><p>Exporte ou importe seus jogos em arquivo JSON.</p></div><div style="display:flex;gap:8px;flex-wrap:wrap"><button id="exportBtn">Exportar JSON</button><button id="importBtn">Importar JSON</button><input id="importFile" type="file" accept=".json,application/json" hidden></div></div>
+      <div class="setting"><div><b>Backup da coleção</b><p>Exporte ou importe seus jogos em arquivo JSON.</p></div><div style="display:flex;gap:8px;flex-wrap:wrap"><button id="exportBtn">Exportar JSON</button><button id="importBtn">Importar JSON</button></div></div>
       <div class="setting"><div><b>Limpar biblioteca</b><p>Remove os jogos salvos apenas neste navegador.</p></div><button id="clearBtn">Limpar jogos</button></div>
       <div class="setting"><div><b>Compatibilidade dos jogos</b><p>Alguns sites bloqueiam iframe. Nesses casos, o hub oferece abrir a página original numa nova aba.</p></div><span class="collection-count">POR SITE</span></div>
     </div>
@@ -170,6 +170,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,[tabindex]:focus-v
     </div>
   </section>
   <section class="view" id="settingsView" aria-label="Configurações"></section>
+  <input id="importFile" type="file" accept=".json,application/json" hidden>
   <div class="bottom-hints" id="bottomHints">
     <div class="hint desktop-hint"><span class="symbol">↕</span> NAVEGAR</div><div class="hint desktop-hint"><span class="symbol">L1</span><span class="symbol">R1</span> CATEGORIAS</div>
     <div class="hint hint-right"><div class="hint"><span class="symbol x">✕</span> JOGAR</div><div class="hint"><span class="symbol square">□</span> DETALHES</div><div class="hint desktop-hint"><span class="symbol">○</span> OPÇÕES</div></div>
